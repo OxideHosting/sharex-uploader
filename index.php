@@ -66,7 +66,7 @@ if ($RequestedImage) {
         <meta name='canonicalURL' content='https://$Hostname/' />
         <meta name='twitter:card' content='summary_large_image'>
         <meta name='twitter:site' content='https://$Hostname/' />
-        <meta name='twitter:title' content='Open Gif' />
+        <meta name='twitter:title' content='Open GIF' />
         <meta name='twitter:description' content=''>
         <meta name='twitter:image' content='https://$Hostname/$RequestedGif.gif'/>
         <meta name='twitter:url' content='https://$Hostname/' />
