@@ -17,7 +17,7 @@ required_infos() {
     if [ "${SERVER_IP}" != "${DOMAIN_RECORD}" ]; then
         exit 2
     fi
-    systemctl disable --now nginx
+    systemctl disable --now nginx apache2
     certbot certonly --standalone --register-unsafely-without-email --agree-tos -d "$FQDN" --non-interactive
     (crontab -l ; echo "0 0 * * * certbot renew >> /dev/null 2>&1")| crontab -
 }
